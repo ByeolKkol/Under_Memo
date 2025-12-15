@@ -1,0 +1,170 @@
+{
+    "94f8c2d1-26fb-425e-8055-d9ebc207356e": {
+        "title": "Ollama Update",
+        "content": "docker stop ollama\ndocker rm ollama\n\ndocker pull ollama/ollama\n\ndocker run -d \\\n  --gpus=all \\\n  --restart unless-stopped \\\n  --shm-size=8g \\\n  -v ollama:/root/.ollama \\\n  -p 11434:11434 \\\n  -e OLLAMA_FLASH_ATTENTION=1 \\\n  -e OLLAMA_KV_CACHE_TYPE=q8_0\n  -e OLLAMA_KEEP_ALIVE=-1 \\\n  -e OLLAMA_MAX_LOADED_MODELS=1 \\\n  -e OLLAMA_NUM_PARALLEL=1 \\\n  -e OLLAMA_ORIGINS=\"*\" \\\n  -e OLLAMA_GPU_OVERHEAD=2048 \\\n\n  --name ollama \\\n  ollama/ollama",
+        "rich_content": [
+            {
+                "text": "docker stop ollama\n",
+                "tags": []
+            },
+            {
+                "text": "docker rm ollama\n",
+                "tags": []
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "docker pull ollama/ollama\n",
+                "tags": []
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "docker run -d \\\n",
+                "tags": []
+            },
+            {
+                "text": "  --gpus=all \\\n",
+                "tags": []
+            },
+            {
+                "text": "  --restart unless-stopped \\\n",
+                "tags": []
+            },
+            {
+                "text": "  --shm-size=8g \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -v ollama:/root/.ollama \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -p 11434:11434 \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_FLASH_ATTENTION=1 \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_KV_CACHE_TYPE=q8_0\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_KEEP_ALIVE=-1 \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_MAX_LOADED_MODELS=1 \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_NUM_PARALLEL=1 \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_ORIGINS=\"*\" \\\n",
+                "tags": []
+            },
+            {
+                "text": "  -e OLLAMA_GPU_OVERHEAD=2048 \\\n",
+                "tags": []
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "  --name ollama \\\n",
+                "tags": []
+            },
+            {
+                "text": "  ollama/ollama",
+                "tags": []
+            }
+        ],
+        "timestamp": "2025-12-15 23:13:34",
+        "custom_title": true,
+        "locked": false,
+        "password": "",
+        "tags": [
+            "ollama"
+        ]
+    },
+    "cc15a00d-5617-436c-9ab8-37063865da31": {
+        "title": "aaaa",
+        "content": "aaaa",
+        "rich_content": [
+            {
+                "text": "aaaa",
+                "tags": []
+            }
+        ],
+        "timestamp": "2025-12-15 19:21:50"
+    },
+    "0f170e08-7b0d-4678-98de-d1a4a5804c9f": {
+        "title": "ㄴㄴㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "content": "ㄴㄴㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "rich_content": [
+            {
+                "text": "ㄴㄴㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ ",
+                "tags": []
+            }
+        ],
+        "timestamp": "2025-12-15 23:19:55"
+    },
+    "b66b3d49-9491-4eb0-80d3-51e24c82fb19": {
+        "title": "http://www.google.co...",
+        "content": "http://www.google.com\n\nㅇㅇㅇㅇ",
+        "rich_content": [
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "type": "image",
+                "path": "/Users/byeolkkol/Work/memo_images/7fc5f0e2312343719dcc992adf51018a.png",
+                "display_width": 300,
+                "display_height": 167
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "http://www.google.com",
+                "tags": [
+                    "link_http://www.google.com"
+                ]
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "\n",
+                "tags": []
+            },
+            {
+                "text": "ㅇㅇㅇ",
+                "tags": []
+            },
+            {
+                "text": "ㅇ",
+                "tags": [
+                    "IMEmarkedtext"
+                ]
+            }
+        ],
+        "timestamp": "2025-12-16 01:10:57"
+    }
+}

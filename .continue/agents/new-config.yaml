@@ -1,0 +1,64 @@
+# This is an example configuration file
+# To learn more, see the full config.yaml reference: https://docs.continue.dev/reference
+
+name: Example Config
+version: 1.0.0
+schema: v1
+
+# Define which models can be used
+# https://docs.continue.dev/customization/models
+# models:
+#  - name: my gpt-5
+#    provider: openai
+#    model: gpt-5
+#    apiKey: YOUR_OPENAI_API_KEY_HERE
+#  - uses: ollama/qwen2.5-coder-7b
+#  - uses: anthropic/claude-4-sonnet
+#    with:
+#      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+name: Local Config
+version: 1.0.0
+schema: v1
+
+models: gemma3:27b-it-q8_0
+  - name: gemma3:27b-it-q8_0
+    provider: ollama
+    model: gemma3:27b-it-q8_0
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000
+models: gemma3:27b-it-qat
+  - name: gemma3:27b-it-qat
+    provider: ollama
+    model: gemma3:27b-it-qat
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000
+models: gpt-oss:20b
+  - name: gpt-oss:20b
+    provider: ollama
+    model: gpt-oss:20b
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000
+models: qwen3-coder:30b-a3b-q8_0
+  - name: qwen3-coder:30b-a3b-q8_0
+    provider: ollama
+    model: qwen3-coder:30b-a3b-q8_0
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000
+models: qwen3:32b-q8_0
+  - name: qwen3:32b-q8_0
+    provider: ollama
+    model: qwen3:32b-q8_0
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000
+models: qwen3-vl:32b-thinking
+  - name: qwen3-vl:32b-thinking
+    provider: ollama
+    model: wen3-vl:32b-thinking
+    apiBase: http://192.168.1.3:11434
+    timeout: 300000emma3:27b-it-q8_0
+
+# MCP Servers that Continue can access
+# https://docs.continue.dev/customization/mcp-tools
+mcpServers:
+  - uses: anthropic/memory-mcp
