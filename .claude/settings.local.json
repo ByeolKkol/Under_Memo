@@ -3,7 +3,13 @@
     "allow": [
       "Bash(python:*)",
       "Bash(pkill:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(ls -la /Users/byeolkkol/Work/*.json)",
+      "Bash(ls:*)",
+      "Bash(wc:*)"
     ]
   }
 }
